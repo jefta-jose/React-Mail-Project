@@ -1,0 +1,46 @@
+.mailTab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0.5rem 1rem;
+
+    .buttons {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .options {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    //if active then change color
+    &.active {
+        background-color: #e0e0e0;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: #64748B;
+        font-weight: 500;
+        padding: 0.2rem 0.5rem;
+
+        &:hover {
+            color: #000;
+            background-color: #c6ecfc;
+            border-radius: 2px;
+
+        }
+    }
+
+}
+
+.mailListBody {
+    max-height: 95vh;
+    overflow-y: scroll;
+}

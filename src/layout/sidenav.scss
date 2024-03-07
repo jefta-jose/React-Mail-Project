@@ -1,0 +1,16 @@
+.sidenav {
+    // max-width: 30%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+
+
+    .btn-wrapper {
+        max-height: 20%;
+        margin: 0.5rem 0.5rem;
+        max-width: 100%;
+    }
+
+}

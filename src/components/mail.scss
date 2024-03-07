@@ -1,0 +1,70 @@
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: baseline;
+    border-radius: 16px;
+    background: #FFF;
+    padding: 0.2rem;
+
+    &:hover {
+        background: #F7F9FC;
+        cursor: pointer;
+    }
+
+    .logo {
+        width: 10%;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+
+    .content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+        .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+
+            .subject {
+                color: #0F172A;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+            }
+
+            .date {
+                color: #64748B;
+                text-align: right;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+
+        .bottom {
+            color: #64748B;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            align-self: stretch;
+
+            p {
+                //https://stackoverflow.com/questions/5717093/webkit-line-clamp-not-working
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+        }
+    }
+}

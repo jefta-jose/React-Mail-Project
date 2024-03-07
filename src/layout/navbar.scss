@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 88px;
+    width: 100%;
+    border-bottom: 1px solid #F1F5F9;
+
+    .nav-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        border-right: 1px solid #F1F5F9;
+        min-height: 88px;
+        min-width: 250px;
+    }
+
+    .nav-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        .nav-body_right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+
+            .userAvator {
+                display: inline-flex;
+                align-items: center;
+            }
+
+            .userAvator:hover {
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                background-color: rgb(199, 215, 228);
+                border-radius: 10%;
+            }
+        }
+    }
+}
